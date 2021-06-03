@@ -1,4 +1,4 @@
-package com.blogspot.nerverid.sweetydate;
+package com.blogspot.nerverid.sweetydate.displayui;
 
 import javax.swing.*;
 import java.awt.*;
