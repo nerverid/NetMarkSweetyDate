@@ -1,15 +1,21 @@
 package com.blogspot.nerverid.sweetydate;
 
+
 import java.util.ArrayList;
 
 public class Referals {
-	private ArrayList referalsRecords;
+	private ArrayList <Client> referalRecords;
 
-    public ArrayList getReferalsRecords() {
-        return referalsRecords;
+    public Referals(int ids[]){
+
+    }
+    public Referals(){
+
     }
 
-    public void setReferalsRecords(ArrayList referalsRecords) {
-        this.referalsRecords = referalsRecords;
+
+
+    public void setReferalsRecords(Client client) {
+        this.referalRecords.add(client);
     }
 }
