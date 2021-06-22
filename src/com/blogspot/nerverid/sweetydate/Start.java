@@ -21,7 +21,7 @@ public class Start {
         clint1.setFirstName("John3");
         clint1.setIdClient(3);
         System.out.println(clint1.getFirstName());
-        Referals ref1 = new Referals();
+        Referals ref1 = new Referals(1);
         ref1.setReferalsRecords(clint2);
         ref1.setReferalsRecords(clint3);
         ref1.setReferalsRecords(clint4);
