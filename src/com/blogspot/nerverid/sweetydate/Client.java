@@ -8,7 +8,8 @@ public class Client {
 	private String secondName;
 	private String lastName;
 	private int age;
-	private ArrayList referals;
+	//private ArrayList referals;
+	private Referals referals;
 	private CurrAccount curAccount;
 
 	public int getIdClient() {
@@ -51,11 +52,11 @@ public class Client {
 		this.age = age;
 	}
 
-	public ArrayList getReferals() {
+	public Referals getReferals() {
 		return referals;
 	}
 
-	public void setReferals(ArrayList referals) {
+	public void setReferals(Referals referals) {
 		this.referals = referals;
 	}
 
