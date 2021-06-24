@@ -26,6 +26,7 @@ public class Start {
         ref1.setReferalsRecords(clint2); 
         ref1.setReferalsRecords(clint3);
         ref1.setReferalsRecords(clint4);
+        System.out.println(ref1.getReferalsRecords());
         System.out.println(clint1.getReferals());
     }
 
