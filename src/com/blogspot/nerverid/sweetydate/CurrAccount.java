@@ -3,6 +3,7 @@ package com.blogspot.nerverid.sweetydate;
 public class CurrAccount {
     private int idAccound;
     private String currAccount;
+    private double bill;
 
     public String getCurrAccount() {
         return currAccount;
@@ -19,5 +20,13 @@ public class CurrAccount {
 
     public void setIdAccound(int idAccound) {
         this.idAccound = idAccound;
+    }
+
+    public void addBill(double pay){
+        this.bill += pay;
+    }
+
+    public void devideBill(double pay){
+        this.bill -= pay;
     }
 }
