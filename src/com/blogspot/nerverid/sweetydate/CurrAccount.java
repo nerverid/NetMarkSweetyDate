@@ -2,15 +2,15 @@ package com.blogspot.nerverid.sweetydate;
 
 public class CurrAccount {
     private int idAccound;
-    private String currAccount;
-    private double bill;
+    private String currAccountOfBank;
+    private double balans;
 
     public String getCurrAccount() {
-        return currAccount;
+        return currAccountOfBank;
     }
 
     public void setCurrAccount(String currAccount) {
-        this.currAccount = currAccount;
+        this.currAccountOfBank = currAccount;
     }
 
 
@@ -23,10 +23,14 @@ public class CurrAccount {
     }
 
     public void addBill(double pay){
-        this.bill += pay;
+        this.balans += pay;
     }
 
     public void devideBill(double pay){
-        this.bill -= pay;
+        this.balans -= pay;
+    }
+
+    public double getBalans(){
+        return balans;
     }
 }

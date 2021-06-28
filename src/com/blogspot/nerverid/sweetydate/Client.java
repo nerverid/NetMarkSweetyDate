@@ -1,6 +1,5 @@
 package com.blogspot.nerverid.sweetydate;
 
-import java.util.ArrayList;
 
 public class Client {
 	private int idClient;
@@ -9,7 +8,7 @@ public class Client {
 	private String lastName;
 	private int age;
 	private Referals referals;
-	//private CurrAccount curAccount;
+	private CurrAccount curAccount;
 
 	public int getIdClient() {
 		return idClient;
@@ -59,11 +58,11 @@ public class Client {
 		this.referals = referals;
 	}
 
-	/*public CurrAccount getCurAccount() {
+	public CurrAccount getCurAccount() {
 		return curAccount;
 	}
 
 	public void setCurAccount(CurrAccount curAccount) {
 		this.curAccount = curAccount;
-	}*/
+	}
 }
