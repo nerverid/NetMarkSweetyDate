@@ -22,12 +22,12 @@ public class CurrAccount {
         this.idAccound = idAccound;
     }
 
-    public void addBill(double pay){
-        this.balans += pay;
+    public void deposit(double amount){
+        this.balans += amount;
     }
 
-    public void devideBill(double pay){
-        this.balans -= pay;
+    public void withDraw(double amount){
+        this.balans -= amount;
     }
 
     public double getBalans(){
