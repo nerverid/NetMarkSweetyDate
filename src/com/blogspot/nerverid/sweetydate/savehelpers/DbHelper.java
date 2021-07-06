@@ -17,11 +17,14 @@ public class DbHelper {
         System.out.println("Registering JDBC driver...");
 
         Class.forName("com.mysql.jdbc.Driver");
+        System.out.println("Creating database connection...");
+        connection = DriverManager.getConnection(DATABASE_URL, user, pass);
     }
 
     public void setPass(String pass) {
         this.pass = pass;
     }
+
 
     public void setUser(String user) {
         this.user = user;
