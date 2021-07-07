@@ -19,14 +19,23 @@ public class DbHelper {
         Class.forName("com.mysql.jdbc.Driver");
         System.out.println("Creating database connection...");
         connection = DriverManager.getConnection(DATABASE_URL, user, pass);
+        
+        System.out.println("Executing statement...");
+        statement = connection.createStatement();
+
+        String sql;
+        sql = "SELECT * FROM clients";
+
+        ResultSet resultSet = statement.executeQuery(sql);
     }
 
     public void setPass(String pass) {
         this.pass = pass;
     }
 
-
     public void setUser(String user) {
         this.user = user;
     }
+
+
 }
