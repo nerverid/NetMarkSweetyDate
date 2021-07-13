@@ -19,7 +19,7 @@ public class DbHelper {
         Class.forName("com.mysql.jdbc.Driver");
         System.out.println("Creating database connection...");
         connection = DriverManager.getConnection(DATABASE_URL, user, pass);
-        
+
         System.out.println("Executing statement...");
         statement = connection.createStatement();
 
@@ -27,6 +27,15 @@ public class DbHelper {
         sql = "SELECT * FROM clients";
 
         ResultSet resultSet = statement.executeQuery(sql);
+
+        while (resultSet.next()) {
+            //
+        }
+
+        System.out.println("Closing connection and releasing resources...");
+        resultSet.close();
+        statement.close();
+        connection.close();
     }
 
     public void setPass(String pass) {
